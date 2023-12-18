@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/mftlogo.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="signin.css" />
+    <title>MFT Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="box1" id="box1">
+          <h1>Register in the system</h1>
+          <form name="form1" onsubmit="return validation()">
+            <p id="result"></p>
+            <!-- name box -->
+            <div class="inputbox">
+              <input type="text" id="firstname" />
+              <span>First Name</span>
+              <p>
+                <i
+                  class="fa-regular fa-user fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <!-- last name -->
+            <div class="inputbox">
+              <input type="text" id="lastname" />
+              <span>Last Name</span>
+              <p>
+                <i
+                  class="fa-regular fa-user fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <!-- National Code -->
+            <div class="inputbox">
+              <input type="text" id="NationalCode" />
+              <span>National Code</span>
+              <p>
+                <i
+                  class="fa-regular fa-user fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <!-- phone box -->
+            <div class="inputbox">
+              <input type="tel" id="phone" />
+              <span>Phone</span>
+              <p>
+                <i
+                  class="fa-regular fa-envelope fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <!-- password box -->
+            <div class="inputbox">
+              <input type="password" id="password" />
+              <span>password</span>
+              <p>
+                <i
+                  class="fa fa-lock fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <!-- confrim password box -->
+            <div class="inputbox">
+              <input type="password" id="confrim" />
+              <span>confrim password</span>
+              <p>
+                <i
+                  class="fa-solid fa-lock fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <input type="submit" value="submit" />
+            <div class="login">
+              <p>Do you have an account?</p>
+              <a href="login.html">Login</a>
+            </div>
+          </form>
+        </div>
+        <div class="box2">
+          <img src="img/account.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

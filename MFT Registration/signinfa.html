@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/mftlogo.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="signinfa.css" />
+    <title>MFT Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="box1" id="box1">
+          <h1>ثبت نام در سامانه</h1>
+          <form name="form1" onsubmit="return validation()">
+            <p id="result"></p>
+            <!-- name box -->
+            <div class="inputbox">
+              <input type="text" id="firstname" />
+              <span>نام</span>
+              <p>
+                <i
+                  class="fa-regular fa-user fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <!-- last name -->
+            <div class="inputbox">
+              <input type="text" id="username" />
+              <span>نام خانوادگی</span>
+              <p>
+                <i
+                  class="fa-regular fa-user fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <!-- National Code -->
+            <div class="inputbox">
+              <input type="text" id="NationalCode" />
+              <span>کد ملی</span>
+              <p>
+                <i
+                  class="fa-regular fa-user fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <!-- phone box -->
+            <div class="inputbox">
+              <input type="tel" id="phone" />
+              <span>شماره موبایل</span>
+              <p>
+                <i
+                  class="fa-regular fa-envelope fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <!-- password box -->
+            <div class="inputbox">
+              <input type="password" id="password" />
+              <span>رمز عبور</span>
+              <p>
+                <i
+                  class="fa fa-lock fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <!-- confrim password box -->
+            <div class="inputbox">
+              <input type="password" id="confrim" />
+              <span>تکرار رمز عبور</span>
+              <p>
+                <i
+                  class="fa-solid fa-lock fa-sm"
+                  id="icon"
+                  style="color: #f9f9fa"
+                ></i>
+              </p>
+            </div>
+            <input type="submit" value="ثبت نام" />
+            <div class="login">
+              <p>حساب کاربری دارید؟</p>
+              <a href="loginfa.html">ورود به داشبورد</a>
+            </div>
+          </form>
+        </div>
+        <div class="box2">
+          <img src="img/account.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

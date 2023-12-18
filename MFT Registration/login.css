@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  background: rgb(235, 234, 239);
+  background: linear-gradient(
+    212deg,
+    rgba(235, 234, 239, 1) 0%,
+    rgba(253, 253, 253, 1) 100%
+  );
+}
+.container {
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+/* login */
+#logins {
+  padding: 70px 140px;
+}
+.login h1 {
+  margin-top: 10px;
+
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 300;
+  color: #f48b84;
+  margin: 70px 140px;
+}
+.login form {
+  inset: 4px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+.login form input {
+  width: 100%;
+  padding: 20px 10px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #f08181;
+  font-size: 1em;
+  height: 4px;
+  background: #e6ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-left: 140px;
+}
+#usernames,
+#passwords,
+#btn {
+  margin-right: 140px;
+}
+input::placeholder {
+  color: #f08181;
+}
+/* btn login */
+.login form button {
+  outline: none;
+  background: transparent;
+  border: #f08181 solid 2px;
+  padding: 15px 0;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 20px;
+  font-weight: 600px;
+  width: 50%;
+  margin-top: 40px;
+  margin-left: 140px;
+}
+.login form button:active {
+  opacity: 0.8;
+}
+.login form button:hover {
+  background-color: #e6ecef;
+  color: #f08181;
+  outline: none;
+  border: none;
+}
+#results {
+  margin-left: 140px;
+  color: #f08181;
+}
+/* box2 */
+.box2 img {
+  width: 800px;
+  margin-top: 85px;
+}
+/* signin */
+.signin {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  color: #f08181;
+  margin-right: 140px;
+}
+.signins {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  color: #f08181;
+  margin-left: 140px;
+}
+@media only screen and (max-width: 1440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(235, 234, 239);
+    background: linear-gradient(
+      100deg,
+      rgba(235, 234, 239, 1) 0%,
+      rgba(253, 253, 253, 1) 100%
+    );
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+  }
+  .login h1 {
+    margin-left: 5px;
+    text-align: center;
+  }
+  .login form input {
+    margin-left: 0;
+    width: 250px;
+  }
+  .login form button {
+    margin-left: 0;
+  }
+  .box2 img {
+    display: none;
+  }
+}

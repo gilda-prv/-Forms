@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/mftlogo.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="login.css" />
+    <title>MFT Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid">
+        <div class="login" id="logins">
+          <h1>LOGIN</h1>
+          <form onsubmit="return login()">
+            <p id="results"></p>
+            <!-- username -->
+            <input
+              type="text"
+              id="user-login"
+              placeholder="enter your username"
+            />
+            <!-- password -->
+            <input
+              type="password"
+              id="password-login"
+              placeholder="enter your password"
+            />
+            <button id="btnlog" onclick="login()">submit</button>
+            <div class="signins">
+              <p>Don't have an account?</p>
+              <a href="signin.html">Register</a>
+            </div>
+          </form>
+        </div>
+        <div class="box2">
+          <img src="img/account.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
